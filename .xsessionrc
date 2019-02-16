@@ -1,0 +1,11 @@
+# Set the keyboard layout
+setxkbmap gb
+# Start the notification daemon
+dunst &
+# Set a medium screen brightness
+light -S 50 &
+# Set the volume but also leave it muted
+amixer set Master 40% off &
+# Export environment variables
+. "${HOME}/.exports"
+
