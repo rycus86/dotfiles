@@ -49,7 +49,9 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec sh -c "exec $(rofi -run-command \"echo '{cmd}'\" -show run)"
+# switch between windows
+bindsym $mod+Tab exec rofi -show window
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
