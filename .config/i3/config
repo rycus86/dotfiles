@@ -47,7 +47,6 @@ bindsym XF86AudioMute exec amixer set Master toggle # mute sound
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
-
 # start dmenu (a program launcher)
 bindsym $mod+d exec sh -c "exec $(rofi -run-command \"echo '{cmd}'\" -show run)"
 # switch between windows
@@ -57,11 +56,14 @@ bindsym $mod+Tab exec rofi -show window
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# lock screen
+bindsym $mod+l exec i3lock-fancy
+
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
